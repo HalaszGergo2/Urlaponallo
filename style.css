@@ -1,0 +1,50 @@
+body{
+    max-width: 60%;
+    margin: auto;
+}
+.formazas{
+    background-color: rgb(192, 231, 218);
+    
+}
+legend{
+    color: white;
+    background-color: green;
+    margin-left: 10px;
+}
+.hatter{
+    background-color: aqua;
+}
+#mashatter{
+    background-color: lightslategray;
+    color: black;
+}
+#gridezes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "e m h";
+}
+#elso{
+    grid-area: e;
+}
+#masodik{
+    grid-area: m;
+}
+#harmadik{
+    grid-area: h;
+}
+.float{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+br{
+    clear:both;
+}
+.kotelezo_mezo label::after{
+    content: "*";
+    color: red;
+}
+.margo{
+    margin-right: 250px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urlap">
+    <meta name="keywords" content="Urlap">
+    <meta name="author" content="Halász Gergő">
+    <link rel="stylesheet" href="style.css">
+    <title>Űrlap gyakorlás</title>
+</head>
+<body>
+    <div id="hatter">
+    <form action="#" method="get">
+        <fieldset class="formazas">
+            <legend>regisztráció</legend>
+            <div class="kotelezo_mezo">
+                <label class="float" for="neve">felhasználónév</label>
+                <input type="text" id="neve" name="felhasznalo" placeholder="csak ékezetmentes betűk">
+                <br>
+                <label class="float" for="jelszo">jelszó</label>
+                <input type="text" name="jelszomezo" id="jelszo" placeholder="min. 3 karakter">
+                <br>
+                <label class="float" for="email">e-mail cím</label>
+                <input type="text" name="emailmezo" id="email" placeholder="vmi@vmi.hu">
+            </div>
+        </fieldset>
+        <fieldset class="formazas">
+            <legend>születés</legend>
+            <label for="szuletes" class="margo">születési dátum</label>
+            <input type="date" name="datummezo" id="szuletes">
+            <fieldset id="gridezes">
+                <legend id="mashatter">személyes</legend>
+                <div id="elso">
+                    <input type="checkbox" name="nyelv1" id="angol">
+                    <label for="angol">angol</label>
+                    <br>
+                    <input type="checkbox" name="nyelv2" id="nemet">
+                    <label for="nemet">német</label>
+                    <br>
+                </div>
+                <div id="masodik">
+                    <label for="szakok">Választott szak:</label>
+                    <select name="szak" id="szakok">
+                    <option value="szoftver">SZF</option>
+                    <option value="rendszergazda">IRÜ</option>
+                    </select>
+                    <br>
+                </div>
+                <div id="harmadik">
+                    <input type="radio" name="nem" id="férfi">
+                    <label for="férfi">férfi</label>
+                    <br>
+                    <input type="radio" name="nem" id="no">
+                    <label for="no">nő</label>
+                    <br>
+                </div>
+            </fieldset>
+        </fieldset>
+        <input type="submit" name="bekuldes" id="bekuldgomb">
+    </form>
+    </div>
+</body>
+</html>
